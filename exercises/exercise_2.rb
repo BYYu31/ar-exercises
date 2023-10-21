@@ -8,7 +8,6 @@ puts "----------"
 @store1 = Store.find_by(id: 1);
 @store2 = Store.find_by(id: 2);
 
-@store2.name = "Richmondhill"
-@store2.save
+@store2.update(name: "Square One");
 
 puts @store2.name;
